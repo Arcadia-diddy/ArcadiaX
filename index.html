@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <a id="topLeftButton" href="changelog.html">Changelog</a>
@@ -46,6 +47,28 @@
   background-color: rgba(255, 255, 255, 0.3);
   transform: scale(1.05);
 }
+
+#bottomRightButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  z-index: 1000;
+}
+
+#bottomRightButton:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  transform: scale(1.1);
+}
+
 
 
     body {
@@ -108,6 +131,7 @@
   </header>
 
   <div class="game-grid">
+    <a href="https://guns.lol/theunderdog" class="game-button">My guns.lol Page</a>
     <a href="games/clbadmondaysimulator.html" class="game-button">Bad Monday Sim</a>
     <a href="games/clbadtimesim.html" class="game-button">Bad Time Sim</a>
     <a href="games/clbaseballbros.html" class="game-button">Baseball Bros</a>
@@ -122,6 +146,7 @@
     <a href="games/clbloonsTD4.html" class="game-button">BloonsTd 4</a>
     <a href="games/clbloonsTD5.html" class="game-button">BloonsTd 5</a>
     <a href="games/clcrazychicken3D.html" class="game-button">CrazyChicken3D</a>
+    <a href="games/Crazy Kitty 3D.html" class="game-button">CrazyKitty3d</a>
     <a href="games/cleffingzombies.html" class="game-button">Effing Zombies</a>
     <a href="games/clgoingballs.html" class="game-button">Going Balls</a>
     <a href="games/clgooglebaseball.html" class="game-button">Google Baseball</a>
@@ -141,11 +166,16 @@
     <a href="games/clmotox3mspookyland.html" class="game-button">MotoX3M Spooky Land</a>
     <a href="games/clmotox3mwinter.html" class="game-button">MotoX3M Winter</a>
     <a href="games/clpolytrackworksnow.html" class="game-button">PolyTrack</a>
+    <a href="games/People Playground.html" class="game-button">People Playground</a>
+    <a href="games/Speed Stars.html" class="game-button">Speed Stars</a>
+    <a href="games/ULTRAKILL.html" class="game-button">Ultrakill</a>
+    <a href="games/World Box.html" class="game-button">WorldBox</a>
   </div>
 
   <footer>
     &copy; 2025 ArcadiaX OtisSlay. All rights reserved.
   </footer>
+  <a href="applications.html" id="bottomRightButton">Applications</a>
 
 </body>
 </html>

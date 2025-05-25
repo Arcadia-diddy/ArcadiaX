@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Proxy Search</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #121212;
+      color: white;
+    }
+    header {
+      background: #00ff99;
+      padding: 1em;
+      text-align: center;
+      color: black;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      padding: 1em;
+      background: #1e1e1e;
+    }
+    input[type="text"] {
+      width: 60%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+    }
+    button {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      background: #00ff99;
+      color: black;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+    iframe {
+      width: 100%;
+      height: calc(100vh - 160px);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Anonymous Search Proxy</h1>
+  </header>
+
+  <form id="searchForm">
+    <input type="text" id="query" placeholder="Search privately..." required />
+    <button type="submit">Search</button>
+  </form>
+
+  <iframe id="frame" src=""></iframe>
+
+  <script>
+    const form = document.getElementById('searchForm');
+    const input = document.getElementById('query');
+    const iframe = document.getElementById('frame');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const query = encodeURIComponent(input.value.trim());
+      iframe.src = `proxy.php?q=${query}`;
+    });
+  </script>
+</body>
+</html>
