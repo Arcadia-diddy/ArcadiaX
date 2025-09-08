@@ -4,5 +4,5 @@ window.onblur = () => {
 };
 window.onfocus = () => {
   document.title = "ArcadiaX";
-  document.getElementById("favicon").href = "UTILITIES\favicon-32x32.png";
+  document.getElementById("favicon").href = "favicon-32x32.png";
 };
